@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thrinadh Kadimi — B.Tech Data Science Student | Data Analyst | Python, SQL & Data Visualization Portfolio" />
+  <meta property="og:title" content="Thrinadh Kadimi | Data Science Portfolio" />
+  <meta property="og:description" content="Portfolio of Thrinadh Kadimi — Data Analyst, Python & SQL specialist, B.Tech Computer Science (Data Science)." />
+  <meta property="og:type" content="website" />
+  <title>Thrinadh Kadimi | Data Science Portfolio</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23062542'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='18' font-weight='900' font-family='Inter,sans-serif' fill='%238C5C3B'%3ETK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/pages.css" />
+</head>
+<body>
+
+<!-- ═══ SCROLL PROGRESS ════════════════════════════════════════ -->
+<div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- ═══ NAVBAR ════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#home" data-page="home">TK<span>.</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="#home"           data-page="home"           class="active">Home</a></li>
+      <li><a href="#skills"         data-page="skills">Skills</a></li>
+      <li><a href="#about"          data-page="about">About</a></li>
+      <li><a href="#certifications" data-page="certifications">Certifications</a></li>
+      <li><a href="#projects"       data-page="projects">Projects</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" role="list">
+    <a href="#home"           data-page="home"           class="active">Home</a>
+    <a href="#skills"         data-page="skills">Skills</a>
+    <a href="#about"          data-page="about">About</a>
+    <a href="#certifications" data-page="certifications">Certifications</a>
+    <a href="#projects"       data-page="projects">Projects</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PAGE 1 — HOME & CONTACT                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="page-home" class="page active-page">
+
+  <!-- ── Hero ── -->
+  <section class="section hero-section" style="padding-top:4rem;padding-bottom:4rem;">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left: text -->
+        <div class="hero-text fade-up">
+          <div class="avail-badge" id="avail-badge">
+            <span class="avail-dot"></span> Open to Internship Opportunities
+          </div>
+          <h1 class="hero-name" id="hero-name">Thrinadh<br>Kadimi</h1>
+          <p class="hero-headline" id="hero-headline">
+            B.Tech Data Science Student &nbsp;·&nbsp; Aspiring Data Analyst<br>
+            Python, SQL &amp; Data Visualization
+          </p>
+          <p class="hero-intro" id="hero-intro">
+            I am a Computer Science student specializing in Data Science, interested in transforming raw data into meaningful insights through data analysis, visualization, and machine learning. I enjoy building practical projects that solve real-world problems and continuously improving my technical skills.
+          </p>
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="#projects" data-page="projects">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              Explore My Projects
+            </a>
+            <a class="btn btn-secondary" href="#contact-section">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact Me
+            </a>
+            <a class="btn btn-outline" href="assets/resume.pdf" download id="resume-btn" aria-label="Download resume PDF">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="hero-contacts">
+            <a class="contact-chip" id="email-link" href="mailto:tkadimi8@gmail.com" aria-label="Send email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span id="email-display">tkadimi8@gmail.com</span>
+            </a>
+            <a class="contact-chip" id="phone-link" href="tel:+917670843702" aria-label="Call phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <span id="phone-display">+91 7670843702</span>
+            </a>
+            <a class="contact-chip" id="linkedin-link" href="https://www.linkedin.com/in/thrinadh-kadimi-771571323/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a class="contact-chip" id="github-link" href="https://github.com/thrinadh-88" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: photo -->
+        <div class="hero-photo-wrap fade-in" style="animation-delay:.15s">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait photograph of Thrinadh Kadimi" id="profile-photo"
+                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23D4D5C0%22/%3E%3Ctext x=%22150%22 y=%22140%22 text-anchor=%22middle%22 font-family=%22Inter,sans-serif%22 font-size=%2264%22 font-weight=%22800%22 fill=%22%238C5C3B%22%3ETK%3C/text%3E%3Ctext x=%22150%22 y=%22185%22 text-anchor=%22middle%22 font-family=%22Inter,sans-serif%22 font-size=%2213%22 fill=%22%23062542%22%3EAdd your photo to%3C/text%3E%3Ctext x=%22150%22 y=%22202%22 text-anchor=%22middle%22 font-family=%22Inter,sans-serif%22 font-size=%2213%22 fill=%22%23062542%22%3Eassets%2Fprofile.jpg%3C/text%3E%3C/svg%3E'" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact Form ── -->
+  <section class="section" id="contact-section" style="padding-top:3rem;background:var(--surface);">
+    <div class="container">
+      <div style="max-width:640px;margin:0 auto;">
+        <div class="section-header" style="margin-bottom:2rem;">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Have a question or opportunity? I'd love to hear from you.</p>
+        </div>
+        <div class="card" data-animate>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Your Name *</label>
+                <input type="text" id="cf-name" name="name" placeholder="Jane Smith" autocomplete="name" />
+                <div class="field-error" id="err-name"></div>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Your Email *</label>
+                <input type="email" id="cf-email" name="email" placeholder="jane@example.com" autocomplete="email" />
+                <div class="field-error" id="err-email"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject *</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+              <div class="field-error" id="err-subject"></div>
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message *</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+              <div class="field-error" id="err-message"></div>
+            </div>
+            <p style="font-size:.82rem;color:var(--muted);margin-bottom:1rem;">
+              ⚠️ <strong>Note:</strong> Configure the contact form endpoint in <code>assets/app.js</code> before deploying to ensure messages are actually delivered.
+            </p>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div id="form-feedback" style="display:none;margin-top:1rem;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PAGE 2 — SKILLS                                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="page-skills" class="page">
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Technical Expertise</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-subtitle">A curated view of the tools and techniques I have hands-on experience with.</p>
+      </div>
+
+      <!-- Search + Filter -->
+      <div class="skills-controls" data-animate style="animation-delay:.1s">
+        <div class="skills-search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted)"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="skills-search" placeholder="Search skills…" aria-label="Search skills" style="padding-left:2.4rem;" />
+        </div>
+        <div class="filter-pills" id="skills-filter" role="group" aria-label="Filter skills by category">
+          <!-- injected by JS -->
+        </div>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+</div><!-- /page-skills -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PAGE 3 — ABOUT & EDUCATION                                 -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="page-about" class="page">
+  <section class="section">
+    <div class="container">
+
+      <!-- About me -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;margin-bottom:5rem;" class="about-intro-grid">
+        <div data-animate>
+          <span class="section-label">About Me</span>
+          <h2 class="section-title" style="text-align:left;margin-bottom:1rem;">Who I Am</h2>
+          <p style="color:var(--muted);margin-bottom:1.25rem;">
+            I am a B.Tech student specializing in Computer Science and Data Science. My interests include data analytics, SQL, Python, business intelligence, and machine learning. I focus on strengthening my problem-solving abilities through hands-on projects and practical learning.
+          </p>
+          <p style="color:var(--muted);margin-bottom:1.75rem;">
+            My goal is to develop reliable, data-driven solutions and contribute to real-world projects. I enjoy turning complex datasets into clear, actionable narratives that help organizations make better decisions.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:.65rem;">
+            <span class="tag">📊 Data Analytics</span>
+            <span class="tag">🐍 Python</span>
+            <span class="tag">🗄️ SQL</span>
+            <span class="tag">📈 Tableau</span>
+            <span class="tag">🤖 Machine Learning</span>
+          </div>
+        </div>
+        <div data-animate style="animation-delay:.1s">
+          <!-- Career interests -->
+          <div class="card">
+            <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--brown);">Career Interests</h3>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.65rem;" id="career-interests-list">
+            </ul>
+          </div>
+          <div class="card" style="margin-top:1.25rem;">
+            <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--brown);">Learning Goals</h3>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.65rem;" id="learning-goals-list">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section-header" data-animate style="margin-bottom:2.5rem;">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div id="edu-timeline" class="edu-timeline">
+        <!-- injected by JS -->
+      </div>
+
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PAGE 4 — CERTIFICATIONS & INTERNSHIPS                      -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="page-certifications" class="page">
+
+  <!-- Certifications -->
+  <section class="section" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Verified credentials from recognized institutions and platforms.</p>
+      </div>
+      <div class="cert-grid" id="cert-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="section" style="padding-top:2.5rem;background:var(--surface);">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Internship Experience</h2>
+        <p class="section-subtitle">Practical work experience that has shaped my professional skills.</p>
+      </div>
+      <div class="intern-timeline" id="intern-timeline">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-certifications -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PAGE 5 — PROJECTS                                          -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="page-projects" class="page">
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Hands-on projects that demonstrate my data analytics and machine learning skills.</p>
+      </div>
+
+      <!-- Filter + Search -->
+      <div class="skills-controls" data-animate style="animation-delay:.1s;margin-bottom:2.5rem;">
+        <div class="skills-search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted)"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="project-search" placeholder="Search projects…" aria-label="Search projects" style="padding-left:2.4rem;" />
+        </div>
+        <div class="filter-pills" id="project-filter" role="group" aria-label="Filter projects by category">
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- injected by JS -->
+      </div>
+
+      <div id="projects-empty" style="display:none;text-align:center;padding:3rem;color:var(--muted);">
+        <p style="font-size:2.5rem;margin-bottom:.75rem;">🔍</p>
+        <p>No projects match your search or filter. Try a different keyword.</p>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-projects -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PROJECT DETAIL MODAL                                       -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="display:none;">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close" aria-label="Close project details">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- 404 PAGE                                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="page-404" class="page">
+  <section class="section" style="text-align:center;min-height:60vh;display:flex;align-items:center;justify-content:center;">
+    <div>
+      <div style="font-size:5rem;margin-bottom:1rem;">📂</div>
+      <h2 class="section-title" style="margin-bottom:.75rem;">Page Not Found</h2>
+      <p style="color:var(--muted);margin-bottom:2rem;">The page you're looking for doesn't exist.</p>
+      <a href="#home" class="btn btn-primary" data-page="home">← Go Home</a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- FOOTER                                                     -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Thrinadh <span style="color:var(--brown-light)">Kadimi</span></h3>
+      <p>B.Tech Computer Science &amp; Data Science student passionate about data analytics, visualization, and machine learning.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home" data-page="home">Home</a></li>
+        <li><a href="#skills" data-page="skills">Skills</a></li>
+        <li><a href="#about" data-page="about">About</a></li>
+        <li><a href="#certifications" data-page="certifications">Certifications</a></li>
+        <li><a href="#projects" data-page="projects">Projects</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/thrinadh-kadimi-771571323/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/thrinadh-88" target="_blank" rel="noopener" id="footer-github">GitHub</a></li>
+        <li><a href="mailto:tkadimi8@gmail.com" id="footer-email">tkadimi8@gmail.com</a></li>
+        <li><a href="assets/resume.pdf" download>Resume PDF</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Thrinadh Kadimi. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/thrinadh-kadimi-771571323/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/thrinadh-88" target="_blank" rel="noopener" aria-label="GitHub" id="footer-github-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- Scripts -->
+<script src="data/portfolio-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
